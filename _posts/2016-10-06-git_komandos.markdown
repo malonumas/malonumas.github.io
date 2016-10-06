@@ -5,7 +5,7 @@ date:   2016-10-06 12:04:55 +0300
 categories: linux
 ---
 
-git init => sukuria naują Git saugyklą
+`git init` => sukuria naują Git saugyklą
 <br>`git status` => tikrina turinį darbinėje byloje ir konstravimo režime
 <br>`git add FailoVardas` => prideda failą iš darbinės bylos į konstravimo režimą
 <br>`git diff FailoVardas` => parodo skirtumus darbinės bylos ir konstravimo režimo 
