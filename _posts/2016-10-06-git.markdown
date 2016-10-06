@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Linux komandos"
+date:   2016-10-06 12:04:55 +0300
+categories: linux
+---
+
+git init => sukuria naują Git saugyklą
+git status => tikrina turinį darbinėje byloje ir konstravimo režime
+git add FailoVardas => prideda failą iš darbinės bylos į konstravimo režimą
+git diff FailoVardas => parodo skirtumus darbinės bylos ir konstravimo režimo 
+git commit -m komentaras => išsaugo pakeitimus į saugyklą su komentaru iš konstravimo režimo
+git log => parodo sąrašą visų išsaugojimų
+git checkout HEAD FailoVardas => patikrina HEAD failą
+git reset HEAD FailoVardas =>   pakeičia neetapinius failo pakeitimus į konstravimo režimą
+git reset SHA => pakeičia į ankstesnius išsaugojimus
+git branch => parodo visas atšsakas
+git branch atšakos_vardas => sukuria atšaka
+git checkout atšakos_vardas => perjungia iš vienos atšakos į kitą
+git merge atšakos_vardas => naudoja nukopijuoti pakeitimus iš vienos atšakos į kitą
+git branch -d atšakos_vardas => ištrina atšaką
+git clone =>sukuria lokalią kopiją iš nutolusios vietos
+git remote -v => Nutolusių vietų git projektų sąrašas
+git fetch => atneša darbą iš nutolusios vietos į lokalią vietą
+git merge origin/master => nukopijuoja pakeitimus origin/master į tavo lokalios vietos master
+git push origin <atšakos_vardas> => įdeda atšaką į nutolusią vietą
+git remote add origin https://github.com/your-user-name/your-user-name.github.io.git
+git remote rm origin
+
+
