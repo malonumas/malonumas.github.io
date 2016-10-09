@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Linux komandos"
-date:   2016-10-01 14:32:55 +0300
 categories: linux
 ---
 
