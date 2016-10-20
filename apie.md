@@ -4,12 +4,6 @@ title: Apie
 permalink: /apie/
 ---
 
-Ši tema sukurta naudojant jekyll variklį, apie kurį daugiau rasite [jekyllrb.com](http://jekyllrb.com/)
+mep.ovh - Tai asmeninis tinklaraštis kuriame galite rasti patarimus ir gidus susijusius su Linux ir Windows operacinėmis sistemomis
 
-Apie jekyyl tema minima daugiau rasite:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
 
-Tralialia tralialia tralialia
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
