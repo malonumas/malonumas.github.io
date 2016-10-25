@@ -12,4 +12,6 @@ bootrec /fixboot
 bootrec /fixmbr
 {% endhighlight %}
 
+Perkrauname kompiuterį!
+
 
