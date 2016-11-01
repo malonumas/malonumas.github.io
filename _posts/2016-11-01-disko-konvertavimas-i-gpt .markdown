@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Windows sistemos užkrovimo atstatymas"
+title:  "Disko konvertavimas į GPT"
 date:   2016-11-01 17:29:29 +0300
 categories: windows
 ---
