@@ -8,7 +8,7 @@ Atidarome `Command Prompt` (Win+R, įrašome cmd, spaudžiame Enter)
 <br>Vedame komandas paeiliui, po kiekvienos spausdami Enter:
 
 
-diskpart
+<b>diskpart</b>
 <br><b>list disk
 <br>select disk</b> #(šioje vietoje vietoj grotelių įrašome savo disko numerį, kurį matysite po  list disk komandos. Dėmesio, būkite atidūs ir pasirinkite tinkamą diską!)
 <br><b>clean
