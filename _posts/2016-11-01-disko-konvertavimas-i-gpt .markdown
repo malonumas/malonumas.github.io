@@ -11,7 +11,7 @@ Atidarome `Command Prompt` (Win+R, įrašome cmd, spaudžiame Enter)
 diskpart
 list disk
 select disk # (šioje vietoje vietoj grotelių įrašome savo disko numerį, kurį 
-matysite po  list disk komandos. Dėmesio, būkite atidūs ir pasirinkite tinkamą diską!)
+#matysite po  list disk komandos. Dėmesio, būkite atidūs ir pasirinkite tinkamą diską!)
 clean
 convert gpt
 create partition primary
