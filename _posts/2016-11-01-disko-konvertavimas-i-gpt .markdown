@@ -14,9 +14,8 @@ GPT (GUID Partition Table) tai atnaujinta kieto disko arba SSD disko particijų 
 <br>UEFI boot’as yra labiau saugus, t.y. gerokai sunkiau pažeidžiamas kenkėjiškų programų
 <br>UEFI boot’as ir sugrįžimas iš miego režimo yra gerokai greitesnis, nei tos pačios sistemos, naudojančios MBR
 <br>UEFI yra didžiausių IT korporacijų, tokių, kaip AMD, Apple, Dell, HP, IBM, Insyde Software, Intel, Lenovo, Microsoft vystomas ateities standartas. UEFI – tai kompiuterių ateitis ir ateityje bus naudojama visuose kompiuteriuose, bei daug daugiau, nei tik jų krovimo metu.
-<br>
-Windows operacinėje sistemoje atidarome `Command Prompt` (Win+R, įrašome cmd, spaudžiame Enter)
 
+<br>Windows operacinėje sistemoje atidarome `Command Prompt` (Win+R, įrašome cmd, spaudžiame Enter)
 <br>Vedame komandas paeiliui, po kiekvienos spausdami Enter:
 
 
