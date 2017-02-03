@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: mep.ovh
-email: info@mep.ovh
+title: blogas.janulis.ovh
+email: info@janulis.ovh
 description: > # this means to ignore newlines until "baseurl:"
   Tai asmeninis tinklaraštis apie linux ir windows sistemas
-url: "http://mep.ovh" # the base hostname & protocol for your site
+url: "http://blogas.janulis.ovh" # the base hostname & protocol for your site
 github_username: malonumas
 
 # Build settings
