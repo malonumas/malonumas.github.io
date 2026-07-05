@@ -24,7 +24,7 @@ categories: linux
 <br>`git fetch` => atsiunčia darbą iš serverio į lokalią vietą
 <br>`git merge origin/master` => nukopijuoja pakeitimus origin/master į tavo lokalios vietos master
 <br>`git push origin <atšakos_vardas>` => įdeda atšaką į serverį
-<br>`git remote add origin https://github.com/your-user-name/your-user-name.github.io.git` => prideda nuotolinį serverį
+<br>`git remote add origin https://github.com/your-user-name/folder_name` => prideda nuotolinį serverį
 <br>`git remote rm origin` => pašalina nuotolinį serverį
 
 
