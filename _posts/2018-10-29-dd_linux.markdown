@@ -20,7 +20,7 @@ Yra labai daug dalykų kuriuos gali daryti su dd, bet geriausiai jis dirba su di
 
 Tarkime tu nori padaryti tikslų atvaizdą viso disko duomenų kuris priskirtas kaip **/dev/sda**. Tu prisijungi tuščią diską (geriausiai tiktų tokios pačios talpos kaip ir tavo **/dev/sda** sistema). Sintaksė paprasta:  **if=** apibrėžia disko šaltinį **of=** apibrėžia failą ar vietą kur tu nori duomenis saugoti:
 
-<br><b>̣`dd if=/dev/sda of=/dev/sdb`</b>
+<br><b>`dd if=/dev/sda of=/dev/sdb`</b>
 
 \
 Kitas pavyzdys sukurs .img archyvą  **/dev/sda** disko ir išsaugos tavo paskyros namų kataloge:
