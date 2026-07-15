@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "Kaip naudoti komandą dd linux sistemoje"
+categories: linux
+---
+
+Nesvarbu, ar tu bandai atkurti duomenis iš mirštančio disko, darai atsarginę kopiją į išorinį diską, tu turi žinoti kaip saugiai ir patikimai kopijuoti diskus ir failų sistemas. Gerai, kad yra dd paprastas ir galingas atvaizdų kopijavimo įrankis. Kol kas neatsirado kas šį darbą padarytų geriau už dd.
+
+
+### **Diskų ir skirsnių kopijų darymas**
+
+
+Yra labai daug dalykų kuriuos gali daryti su dd, bet geriausiai jis dirba su diskų skirniais. Be abejo tu gali naudoti **tar** ir **scp** failų kopijavimui iš vieno kompiuterio į kitą.  Tam reikalinga veikianti operacinė sistema, kad galėtum tuos failus perkelti. Prieš pradėdamas daryti kopijas žinok, kad yra tiesos seno UNIX admino juokelyje: ” dd yra disko naikintojas”. Jeigu tu įvesi vieną klaidingą ženklą dd komandoje, tu ištrinsi visus duomenis iš disko.
+
+**Atsimink**: Prieš spausdamas Enter klavišą dd komandos vykdymui, sustok ir pagalvok!
+
+
+### **Pagrindinės dd operacijos**
+
+
+Tarkime tu nori padaryti tikslų atvaizdą viso disko duomenų kuris priskirtas kaip **/dev/sda**. Tu prisijungi tuščią diską (geriausiai tiktų tokios pačios talpos kaip ir tavo **/dev/sda** sistema). Sintaksė paprasta:  **if=** apibrėžia disko šaltinį **of=** apibrėžia failą ar vietą kur tu nori duomenis saugoti:
+
+<br><b>̣`dd if=/dev/sda of=/dev/sdb`</b>
+
+\
+Kitas pavyzdys sukurs .img archyvą  **/dev/sda** disko ir išsaugos tavo paskyros namų kataloge:
+
+
+<br><b>`dd if=/dev/sda of=/home/username/sdadisk.img`</b>
+
+\
+Šios komandos sukurs viso disko atvaizdus.  Taip pat gali sutelkti dėmesį į vieną disko skirsnį. Kitas pavyzdys kaip tik apie tai ir naudoja **bs**, kad nustatytų baitų skaičių kopijavimui per vieną kartą. Reikšmė **bs** gali turėti įtakos **dd** operacijos greičiui, tačiau nustatymai priklauso nuo tavo aparatūros ir kitų aspektų.
+
+
+<br><b>`dd if=/dev/sda2 of=/home/username/partition2.img bs=4096`</b>
+
+\
+Atkurimas paprastas: sukeiti vietomis **if** ir **of**. Šiuo atveju **if=** naudos atvaizdą kurį nori atkurti, o **of=** naudos diską į kurį nori įrašyti atvaizdą:
+
+
+<br><b>`dd if=sdadisk.img of=/dev/sdb`</b>
+
+\
+Tu gali naudoti sukurti ir kopijuoti vienoje komandoje. Šitas pavyzdys kaip sukurti ir suarchyvuoti nutolusio disko atvaizdą naudojant SSH ir išsaugoti archyvą savo kompiuteryje:
+
+
+<br><b>`ssh username@example.com "dd if=/dev/sda | gzip -1 -" | dd of=backup.gz`</b>
+
+\
+Tu visada turi patikrinti archyvus ir patvirtinti, kad jie veikia. Jeigu tai užkrovimo diskas, turi ji įdėti į kompiuterį ir pažiūrėti ar gerai jis pasileidžia. Jeigu tai duomenu skirsnis, patikrink ar yra visi failai.
+
+
+### **Diskų ištrynimas su dd**
+
+
+Tu gali naudoti dd komandą, kad butų labai sunku atkurti senus duomenis. Ji įrašys milijonus nulių į **/dev/sda1** skirsnį:
+
+
+<br><b>`dd if=/dev/zero of=/dev/sda1`</b>
+
+\
+Bet yra geriau. Naudojant /dev/urandom failą kaip šaltinį, tu gali prirašyti diską įvairių simbolių:
+
+<br><b>`dd if=/dev/urandom of=/dev/sda1`</b>
+
+\
+Sėkmės darant diskų kopijas!
+
+
